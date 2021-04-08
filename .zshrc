@@ -105,4 +105,7 @@ p() { pushd $1 }
 pp() { popd }
 
 
+# 04/08/2021, JB: added for cabal builds for Cardano
+export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
 
